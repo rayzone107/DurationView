@@ -6,6 +6,11 @@ For example, if you wish to display a duration split into Days, Hours, Mins and 
 
 ![alt text](https://github.com/rayzone107/DurationView/blob/master/Image%201.png) . . . . . ![alt text](https://github.com/rayzone107/DurationView/blob/master/Image%202.png) 
 
+<h3>Sample App</h3>
+
+Download the Demo app on Google Play Store:
+
+<a href='https://play.google.com/store/apps/details?id=com.rachitgoyal.durationview'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="160" height="65"></a>
 
 <h2>Installation</h2>
 
