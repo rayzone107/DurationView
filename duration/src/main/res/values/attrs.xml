@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DurationView">
+        <attr name="dv_days" format="integer" />
+        <attr name="dv_hours" format="integer" />
+        <attr name="dv_mins" format="integer" />
+        <attr name="dv_secs" format="integer" />
+        <attr name="dv_days_label" format="string" />
+        <attr name="dv_hours_label" format="string" />
+        <attr name="dv_mins_label" format="string" />
+        <attr name="dv_secs_label" format="string" />
+        <attr name="dv_number_text_size" format="dimension" />
+        <attr name="dv_label_text_size" format="dimension" />
+        <attr name="dv_label_position" format="integer">
+            <flag name="top" value="0" />
+            <flag name="bottom" value="1" />
+        </attr>
+        <attr name="dv_label_vertical_padding" format="dimension" />
+
+        <attr name="dv_days_color" format="color" />
+        <attr name="dv_days_label_color" format="color" />
+        <attr name="dv_hours_color" format="color" />
+        <attr name="dv_hours_label_color" format="color" />
+        <attr name="dv_mins_color" format="color" />
+        <attr name="dv_mins_label_color" format="color" />
+        <attr name="dv_secs_color" format="color" />
+        <attr name="dv_secs_label_color" format="color" />
+        <attr name="dv_number_color" format="color" />
+        <attr name="dv_label_color" format="color" />
+        <attr name="dv_text_color" format="color" />
+
+        <attr name="dv_show_days" format="boolean" />
+        <attr name="dv_show_hours" format="boolean" />
+        <attr name="dv_show_mins" format="boolean" />
+        <attr name="dv_show_secs" format="boolean" />
+        <attr name="dv_show_labels" format="boolean" />
+        <attr name="dv_show_dividers" format="boolean" />
+        <attr name="dv_divider_width" format="dimension" />
+        <attr name="dv_divider_color" format="color" />
+        <attr name="dv_divider_top_bottom_margin" format="dimension" />
+
+    </declare-styleable>
+</resources>

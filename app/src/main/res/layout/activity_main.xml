@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="30dp"
+        tools:context="com.rachitgoyal.durationview.MainActivity">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Sample Use Cases"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/duration_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Basic Usage" />
+
+            <com.rachitgoyal.durationitem.DurationView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                app:dv_days="10"
+                app:dv_hours="16"
+                app:dv_mins="24"
+                app:dv_secs="39" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/duration_2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/duration_1"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Without Label" />
+
+            <com.rachitgoyal.durationitem.DurationView
+                android:layout_width="180dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="10dp"
+                app:dv_days="4"
+                app:dv_hours="39"
+                app:dv_mins="22"
+                app:dv_secs="11"
+                app:dv_show_labels="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/duration_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration_2"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Label on Top" />
+
+            <com.rachitgoyal.durationitem.DurationView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                app:dv_days="7"
+                app:dv_hours="41"
+                app:dv_label_position="top"
+                app:dv_mins="7"
+                app:dv_secs="13" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/duration_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration_3"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Different Label Color" />
+
+            <com.rachitgoyal.durationitem.DurationView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                app:dv_days="12"
+                app:dv_hours="21"
+                app:dv_label_color="#ff0000"
+                app:dv_mins="42"
+                app:dv_secs="27" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/duration_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration_4"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Custom All Colors" />
+
+            <com.rachitgoyal.durationitem.DurationView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                app:dv_days="1"
+                app:dv_days_color="#ff0000"
+                app:dv_days_label_color="#ca25cf"
+                app:dv_hours="19"
+                app:dv_hours_color="#2e76c2"
+                app:dv_hours_label_color="#bfb112"
+                app:dv_mins="31"
+                app:dv_mins_color="#0b9416"
+                app:dv_mins_label_color="#505050"
+                app:dv_secs="24"
+                app:dv_secs_color="#ff9a28"
+                app:dv_secs_label_color="#5dfff4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/duration_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration_5"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Custom Labels" />
+
+            <com.rachitgoyal.durationitem.DurationView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                app:dv_days="4"
+                app:dv_days_label="Years"
+                app:dv_hours="8"
+                app:dv_hours_label="Months"
+                app:dv_mins="2"
+                app:dv_mins_label="Weeks"
+                app:dv_secs="23"
+                app:dv_secs_label="Days" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/duration_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration_6"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="With 3 Values" />
+
+            <com.rachitgoyal.durationitem.DurationView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                app:dv_hours="11"
+                app:dv_mins="37"
+                app:dv_secs="45"
+                app:dv_show_days="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/duration_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration_7"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="With 2 Values" />
+
+            <com.rachitgoyal.durationitem.DurationView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                app:dv_mins="22"
+                app:dv_secs="34"
+                app:dv_show_days="false"
+                app:dv_show_hours="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/duration_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration_8"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="With 1 Values" />
+
+            <com.rachitgoyal.durationitem.DurationView
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                app:dv_mins="123"
+                app:dv_show_days="false"
+                app:dv_show_hours="false"
+                app:dv_show_secs="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/duration_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration_9"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="With Dividers" />
+
+            <com.rachitgoyal.durationitem.DurationView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                app:dv_days="21"
+                app:dv_hours="51"
+                app:dv_mins="29"
+                app:dv_secs="35"
+                app:dv_show_dividers="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/duration_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration_10"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Customizing Dividers" />
+
+            <com.rachitgoyal.durationitem.DurationView
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                app:dv_days="21"
+                app:dv_divider_color="#ff0000"
+                app:dv_divider_top_bottom_margin="4dp"
+                app:dv_divider_width="4dp"
+                app:dv_hours="51"
+                app:dv_mins="29"
+                app:dv_secs="35"
+                app:dv_show_dividers="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/duration_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration_11"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Programmatically Set" />
+
+            <com.rachitgoyal.durationitem.DurationView
+                android:id="@+id/programmatic_dv"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/duration_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration_12"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Custom Background" />
+
+            <com.rachitgoyal.durationitem.DurationView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ffff00" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/title"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/duration_1"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/duration_2"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/duration_3"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/duration_4"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/duration_5"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/duration_6"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/duration_7"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/duration_8"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/duration_9"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/duration_10"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/duration_11"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/duration_12"
+            android:background="@android:color/black" />
+
+    </RelativeLayout>
+</ScrollView>
