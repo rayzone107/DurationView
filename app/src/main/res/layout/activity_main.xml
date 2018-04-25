@@ -30,6 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/title"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -53,12 +54,12 @@
 
         </LinearLayout>
 
-
         <LinearLayout
             android:id="@+id/duration_2"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_below="@id/duration_1"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -88,6 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/duration_2"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -117,6 +119,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/duration_3"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -146,6 +149,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/duration_4"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -182,6 +186,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/duration_5"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -214,6 +219,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/duration_6"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -242,6 +248,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/duration_7"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -270,6 +277,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/duration_8"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -298,6 +306,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/duration_9"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -327,6 +336,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/duration_10"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -359,6 +369,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/duration_11"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -384,6 +395,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/duration_12"
+            android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -401,6 +413,33 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="10dp"
                 android:background="#ffff00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/duration_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration_13"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Variable Sizes" />
+
+            <com.rachitgoyal.durationitem.DurationView
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                app:dv_label_text_size="18sp"
+                app:dv_number_text_size="12sp" />
 
         </LinearLayout>
 
@@ -480,6 +519,18 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_below="@id/duration_12"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/duration_13"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/duration_14"
             android:background="@android:color/black" />
 
     </RelativeLayout>
