@@ -19,7 +19,7 @@ Download the Demo app on Google Play Store:
 Add it as a dependency in your app's build.gradle file
 ```
 dependencies {
-    compile 'com.github.rayzone107:durationview:0.0.1'
+    implementation 'com.github.rayzone107:durationview:0.0.1'
 }
 ```
 
