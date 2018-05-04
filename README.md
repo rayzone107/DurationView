@@ -29,7 +29,7 @@ allprojects {
 Add it as a dependency in your app's build.gradle file
 ```
 dependencies {
-    implementation 'com.github.rayzone107:durationview:1.00'
+    implementation 'com.github.rayzone107:DurationView:1.00'
 }
 ```
 
