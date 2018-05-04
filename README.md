@@ -16,10 +16,20 @@ Download the Demo app on Google Play Store:
 
 <h3>Gradle</h3>
 
+Add JitPack in your root build.gradle at the end of repositories:
+```
+allprojects {
+	repositories {
+        ...
+		maven { url 'https://jitpack.io' }
+    }
+}
+```
+
 Add it as a dependency in your app's build.gradle file
 ```
 dependencies {
-    implementation 'com.github.rayzone107:durationview:0.0.1'
+    implementation 'com.github.rayzone107:durationview:1.00'
 }
 ```
 
