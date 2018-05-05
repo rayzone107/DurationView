@@ -4,7 +4,7 @@ Duration View allows you to create views to depict durations of time.
 
 For example, if you wish to display a duration split into Days, Hours, Mins and Secs, you just need to set the values and DurationView will do the rendering for you.
 
-![alt text](https://github.com/rayzone107/DurationView/blob/master/Image%201.png) . . . . . ![alt text](https://github.com/rayzone107/DurationView/blob/master/Image%202.png) 
+![alt text](/Image%201.png) . . . . . ![alt text](/Image%202.png) 
 
 <h3>Sample App</h3>
 
